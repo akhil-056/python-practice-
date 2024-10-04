@@ -1,0 +1,10 @@
+from tkinter import*
+from tkinter import messagebox
+m=Tk()
+def show():
+     res=messagebox.askyesno("this is yes","hi")
+     labe=Label(m,text=res,font=("",16)).pack(pady=(20,0))
+bu=Button(m,text="show messages",font=(" ",15),command=show)
+
+bu.pack()
+m.mainloop( )

@@ -1,0 +1,10 @@
+from tkinter import*
+root=Tk()
+root.title("My Application")
+tool_bar=Frame(root,bg="blue")
+tool_bar.pack(side=BOTTOM, fill=X)
+my_l=Label(root,text="Value")
+my_l.pack()
+sca=Scale(tool_bar,from_=100,to=0,orient=VERTICAL)
+sca.pack(side=LEFT,padx=10,pady=10)
+root.mainloop()

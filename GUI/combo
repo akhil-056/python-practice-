@@ -1,0 +1,6 @@
+from tkinter import*
+from tkinter import ttk
+m=Tk()
+combobox=ttk.Combobox(m,values=["ot","efse","grgwf"])
+combobox.pack()
+m.mainloop()

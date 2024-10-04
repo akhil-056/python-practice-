@@ -1,0 +1,21 @@
+from tkinter import*
+from tkinter import messagebox
+m=Tk()
+def newfi():
+    print("new file is opend")
+    o=messagebox.showinfo("OPEN","your new file opened")
+def save():
+    print("your file saved")
+    t=messagebox.showinfo("SAVED","your file is saved")
+def open ():
+    print("your file opened")
+    n=messagebox.showinfo("OPENED","your file is opened")
+myf=Frame(m,bd=1)
+myf.pack(side=TOP,fill=X)
+b1=Button(myf,text="newfile",font=("times new roman",30,"bold"),bg="lavender",fg="black",command=newfi,cursor='hand2')
+b1.pack(padx=20,pady=30)
+b2=Button(myf,text="save",font=("times new roman",30,"bold"),bg="lavender",fg="black",command=save,cursor="hand2")
+b2.pack(padx=20,pady=30)
+b3=Button(myf,text="open",font=("times new roman",30,"bold"),bg="lavender",fg="black",command=open,cursor='hand2')
+b3.pack(padx=20,pady=30)
+m.mainloop()

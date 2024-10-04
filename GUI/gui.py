@@ -1,0 +1,16 @@
+from tkinter import*
+m=Tk()
+my_lab=Label(m,text="Gates Institute of Technology",font=("bold"),fg="black",bg="white",cursor="hand2")
+my_lab.pack(pady=50,padx=50)
+my_label=Label(m,text="User Name",font=("Times New Roman"),fg="black",bg="white",cursor="hand2")
+my_label.pack(pady=50,padx=50)
+fut=Entry(m,text="User name",font=("Times Of Roman","bold"),fg="black",bg="lavender",cursor="hand2")
+fut.pack()
+thut=Label(m,text="Password",font=("Times Of Roman","bold"),fg="black",bg="lavender",cursor="hand2")
+thut.pack()
+aut=Entry(m,text="Password",font=("Times New Roman","bold"),fg="black",bg="white",cursor="hand2")
+aut.pack(pady=50,padx=50)
+out=Button(m,font=("Times Of Roman","bold",9),fg="black",bg="lavender",cursor="hand2")
+out.pack()
+m.mainloop()
+

@@ -1,0 +1,26 @@
+import tkinter as tk
+m=tk.Tk()
+m.title("my application")
+menu=tk.Menu(m)
+m.config(menu=menu)
+file_menu=tk.Menu(menu,tearoff=0)
+file_menu.add_command(label="open",command=lambda:print("open file"))
+                    
+file_menu.add_command(label="save",command=lambda:print("save file"))
+file_menu.add_command(label="exit",command=m.destroy)
+file_menu.add_separator()
+
+edit_menu=tk.Menu(menu,tearoff=0)
+edit_menu.add_command(label="cut")
+                    
+edit_menu.add_command(label="copy")
+edit_menu.add_command(label="paste")
+menu.add_cascade(label="file",menu=file_menu)
+menu.add_cascade(label="edit",menu=edit_menu)
+file_menu.add_separator()
+
+
+# exit_menu= tk.Menu(menu,tearoff=0)
+# exit_menu.add_command(label="exit",command=m.destroy)
+# exit_menu.add_cascade(label="exit",menu=exit_menu)
+m.mainloop()

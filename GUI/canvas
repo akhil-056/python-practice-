@@ -1,0 +1,12 @@
+from tkinter import*
+m=Tk()
+canvas=Canvas(m,width=400,height=500)
+canvas.pack()
+canvas.create_line(500,50,200,50,fill="blue",width=4)
+canvas.create_rectangle(200,200,300,300,fill="purple")
+canvas.create_oval(200,200,300,300,fill="white")
+canvas.create_arc(100,200,200,100,fill="green")
+canvas.create_polygon(23.2,42.34,45.4,45.5,fill="yellow")
+
+
+m.mainloop()

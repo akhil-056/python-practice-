@@ -1,0 +1,14 @@
+from tkinter import*
+from PIL import Image,ImageTk
+M=Tk()  
+def open():
+    global img
+    mw2=Toplevel()
+    imag=ImageTk.open(r'c:\Users\udayk\Downloads\jhk.jpeg')
+    img_label=Label(M,Image=imag)
+    img_label.pack()
+    exib=Button(M,text="exit",command=mw2.destroy)
+    exib.pack()
+my=Button(M,text="SUBMIT",command=open)
+my.pack()
+M.mainloop()

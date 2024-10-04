@@ -1,0 +1,24 @@
+from tkinter import*
+m=Tk()
+meow=Listbox(m)
+meow.pack()
+def endho():
+    selec=meow.curselection()
+    if selec:
+        meow.delete(selec[0])
+def inp():
+    name=ent.get()
+    meow.insert(2,name)
+
+meow.insert(1,"Akhil")
+meow.insert(2,"saquib")
+meow.insert(3,"Moulali")
+meow.insert(4,"fayaz")
+rem=Button(m,text ="remove",font=("pristina",20,"bold"),bg="purple",fg="black",command=endho)
+rem.pack()
+but=Button(m,text="enter",command=inp)
+but.pack()
+ent=Entry(m,font=("times new roman",23),fg="black",bg="lavender")
+ent.pack()
+m.mainloop()
+

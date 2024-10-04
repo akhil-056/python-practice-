@@ -1,0 +1,30 @@
+from tkinter import Tk, Label, Entry, Button
+
+def handle_button_click():
+    # Handle button click event here (e.g., print entered values)
+    username = username_entry.get()
+    password = password_entry.get()
+    print("Username:", username)
+    print("Password:", password)
+
+# Create the main window
+window = Tk()
+window.title("Gates Institute of Technology")
+
+# Create labels and entries
+username_label = Label(window, text="Username", font=("Times New Roman", "bold"))
+username_label.pack(pady=10)
+username_entry = Entry(window, font=("Times New Roman", "bold"))
+username_entry.pack()
+
+password_label = Label(window, text="Password", font=("Times New Roman", "bold"))
+password_label.pack(pady=10)
+password_entry = Entry(window, font=("Times New Roman", "bold"))
+password_entry.pack()
+
+# Create the button
+submit_button = Button(window, text="Submit", command=handle_button_click)
+submit_button.pack(pady=20)
+
+# Start the main loop
+window.mainloop()

@@ -1,0 +1,13 @@
+from tkinter import*
+root=Tk()
+def hello(value):
+    my_l.config(text=f"volume :{value}")
+    print(value)
+root.title("My Application")
+tool_bar=Frame(root,bg="blue")
+tool_bar.pack(side=BOTTOM, fill=X)
+my_l=Label(root,text="Volume")
+my_l.pack()
+sca=Scale(tool_bar,from_=100,to=0,orient=VERTICAL,command=hello)
+sca.pack(side=LEFT,padx=10,pady=10)
+root.mainloop()

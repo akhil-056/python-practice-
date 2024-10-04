@@ -1,0 +1,14 @@
+from tkinter import*
+root=Tk()
+
+root.title("My Application")
+def hand():
+    res=sca.get()
+    my_l.config(text=res)
+tool_bar=Frame(root,bg="blue")
+tool_bar.pack(side=BOTTOM, fill=X)
+my_l=Label(root,text="Volume")
+my_l.pack()
+sca=Spinbox(tool_bar,from_=0,to=100,command=hand)
+sca.pack(side=LEFT,padx=10,pady=10)
+root.mainloop()

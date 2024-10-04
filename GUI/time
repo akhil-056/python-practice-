@@ -1,0 +1,13 @@
+from tkinter import*
+from time import strftime
+m=Tk()
+m.geometry("615x140")
+label=Label(m,text="Digital Clock",font=("Times New Roman",24,"bold"),bg="lavender",fg="black")
+label.pack()
+def my_time():
+    current_time=strftime("%H hours:%M Minutes:%S Seconds:%h %p %D:%m:%y")
+    label.config(text=current_time)
+    label.after(1000,my_time)
+my_time()
+m.mainloop()
+

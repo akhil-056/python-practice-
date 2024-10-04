@@ -1,0 +1,18 @@
+from tkinter import*
+mw=Tk()
+def hell():
+    name=user_input.get()
+    greetings="hello"+name
+    greet="please enter  u rname"
+    if name!="":
+        user.config(text=greetings)
+    elif name=="":
+        user.config(text=greet)
+    
+user_input=Entry(mw,text=" ",font=("Arial",20,"bold"),fg="black",bg="white",cursor="hand2")
+user_input.pack(padx=20,pady=20)
+user=Label(mw,text="Enter a name",font=("Arial",20,"bold"),fg="black",bg="white",cursor="hand2")
+user.pack(padx=20,pady=20)
+button=Button(mw,text="submit",font=("Arial",20,"bold"),fg="black",bg="green",cursor="hand2",command=hell)
+button.pack(padx=30,pady=20)
+mw.mainloop()

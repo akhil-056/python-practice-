@@ -1,0 +1,12 @@
+from tkinter import*
+from time import strftime
+m=Tk()
+lab=Label(m,text="digital clock",font=("times new roman",30,"bold"),bg="lavender",fg="black")
+lab.pack()
+def tan():
+
+    current_t=strftime("%H HOURS:%M MINUTES :%S SECONDS %d:%m:%y")
+    lab.config(text=current_t)
+    lab.after(1000,tan)
+tan()
+m.mainloop()
